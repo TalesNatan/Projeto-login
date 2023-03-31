@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*typical device breakpoints (recomendações do w3c
+pequenas telas:  até 600px de largura
+celulares: 600px até 768px de largura
+tablets: 768px até 992px
+desktops: 992px até 1200px
+grandes telas: acima de 1200px*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) 
+/*config para tablet*/
+
+{#login {width: 80vw; height: 300px;} 
+
+body {background-image: linear-gradient(to top, #49a09d, #5f2c82 );}
+
+#login > #imagem {float: left; width: 30%; height: 100%; background: #5f2c82 url(../Imagens/pexels-miguel-á-padriñán-2882566.jpg) no-repeat center center; background-size: cover;}
+
+#login > #formulário {float: right; width: 70%;}
+
+#formulário {position: relative; top: 50%; transform: translate(0%, -50%);}
+
+#formulário >h1 {font-size: 2em;} 
+
+#formulário >p {margin: 20px 0px;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+/*config para desktop*/
+
+{section#login {width: 950px; height: 350px;} 
+
+body {background-image: linear-gradient(to top, #49a09d, #5f2c82 );}
+
+#login > #imagem {float: right; width: 50%; height: 100%;}
+
+#formulário {float: left; width: 50%; position: relative; top: 50%; transform: translate(0%, -50%);}
+
+#formulário > h1 {font-size:2em;}
+
+#formulário > p {margin: 20px 0px;}
+
+}
+
+@media screen and (min-width:1200px) 
+/*config para telas grandes*/
+{
+section#login {width: 1200px; height: 500px;} 
+
+body {background-image: linear-gradient(to top, #49a09d, #5f2c82 );}
+
+#login > #imagem {float: right; width: 50%; height: 100%;}
+
+#formulário {float: left; width: 50%; position: relative; top: 50%; transform: translate(0%, -50%);}
+
+#formulário > h1 {font-size:2.2em;}
+
+#formulário > p {margin: 20px 0px; font-size: 1.2em;}
+
+form>.campo {height: 150px;}
+
+.campo>input {height: 50px; position: relative; top: 50%; transform: translate(0%, -115%);}
+
+.campo>.material-icons {position: relative; top:25%; font-size: 2em;}
+
+form input[type=submit] {height: 50px;}
+
+form > a.botão {height: 50px; padding-top: 10px;}
+}
